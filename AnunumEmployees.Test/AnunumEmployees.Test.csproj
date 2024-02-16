@@ -24,6 +24,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AnunumEmployees\AnunumEmployees.csproj" />
+    <ProjectReference Include="..\LoggerService\LoggerService.csproj" />
+    <ProjectReference Include="..\Contracts\Contracts.csproj" />
   </ItemGroup>
 
 </Project>

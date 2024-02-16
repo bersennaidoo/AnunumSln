@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnunumEmployees.Test", "Anu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnunumEmployees", "AnunumEmployees\AnunumEmployees.csproj", "{8BAB6B9B-DE3B-4209-A774-D99F04BC68E5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contracts", "Contracts\Contracts.csproj", "{04681FEF-4065-44F2-A6B4-A9BA526C70D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggerService", "LoggerService\LoggerService.csproj", "{780D4A48-848E-4084-8354-F31A5D9B6BAA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +28,13 @@ Global
 		{8BAB6B9B-DE3B-4209-A774-D99F04BC68E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8BAB6B9B-DE3B-4209-A774-D99F04BC68E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8BAB6B9B-DE3B-4209-A774-D99F04BC68E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04681FEF-4065-44F2-A6B4-A9BA526C70D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04681FEF-4065-44F2-A6B4-A9BA526C70D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04681FEF-4065-44F2-A6B4-A9BA526C70D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04681FEF-4065-44F2-A6B4-A9BA526C70D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{780D4A48-848E-4084-8354-F31A5D9B6BAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{780D4A48-848E-4084-8354-F31A5D9B6BAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{780D4A48-848E-4084-8354-F31A5D9B6BAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{780D4A48-848E-4084-8354-F31A5D9B6BAA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
