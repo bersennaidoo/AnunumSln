@@ -12,6 +12,7 @@ public class Program
     {
         var builder = WebApplication.CreateBuilder(args);
 
+        AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
         LogManager.Setup().LoadConfigurationFromFile(string.Concat(Directory.GetCurrentDirectory(), "/nlog.config"));
 
         // Add services to the container.
