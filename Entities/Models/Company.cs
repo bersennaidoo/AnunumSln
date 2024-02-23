@@ -1,3 +1,6 @@
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace Entities.Models;
 
 public class Company
@@ -36,6 +39,7 @@ public class Employee
 
     [ForeignKey(nameof(Company))]
     public Guid CompanyId { get; set; }
+
     public Company? Company { get; set; }
 }
 
