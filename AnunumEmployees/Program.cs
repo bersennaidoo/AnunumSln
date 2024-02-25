@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.HttpOverrides;
 using AnunumEmployees.Extensions;
+using AnunumEmployees.Presentation;
 using Contracts;
 using LoggerService;
 using NLog;
@@ -24,7 +25,8 @@ public class Program
 
         builder.Services.ConfigureRepositoryManager();
         builder.Services.ConfigureServiceManager();
-        builder.Services.AddControllers();
+        builder.Services.AddControllers()
+            .AddApplicationPart(typeof(AssemblyReference).Assembly);
 
         var app = builder.Build();
 

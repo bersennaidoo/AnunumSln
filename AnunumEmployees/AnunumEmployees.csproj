@@ -5,6 +5,7 @@
     <ProjectReference Include="..\LoggerService\LoggerService.csproj" />
     <ProjectReference Include="..\Repository\Repository.csproj" />
     <ProjectReference Include="..\Service\Service.csproj" />
+    <ProjectReference Include="..\AnunumEmployees.Presentation\AnunumEmployees.Presentation.csproj" />
   </ItemGroup>
 
   <ItemGroup>
