@@ -22,6 +22,7 @@ public class Program
         builder.Services.ConfigureIISIntegration();
         builder.Services.ConfigureSqlContext(builder.Configuration);
         builder.Services.ConfigureLoggerService();
+        builder.Services.AddAutoMapper(typeof(Program));
 
         builder.Services.ConfigureRepositoryManager();
         builder.Services.ConfigureServiceManager();
