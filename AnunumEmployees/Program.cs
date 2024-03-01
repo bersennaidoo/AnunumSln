@@ -23,6 +23,7 @@ public class Program
         builder.Services.ConfigureSqlContext(builder.Configuration);
         builder.Services.ConfigureLoggerService();
         builder.Services.AddAutoMapper(typeof(Program));
+        builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
 
         builder.Services.ConfigureRepositoryManager();
         builder.Services.ConfigureServiceManager();
@@ -31,12 +32,15 @@ public class Program
 
         var app = builder.Build();
 
-        // Configure the HTTP request pipeline.
+        //var logger = app.Services.GetRequiredService<ILoggerManager>();
+        //app.ConfigureExceptionHandler(logger);
+        app.UseExceptionHandler(opt => {});
 
-        if (app.Environment.IsDevelopment())
-            app.UseDeveloperExceptionPage();
-        else
+        if (app.Environment.IsProduction())
             app.UseHsts();
+
+
+        // Configure the HTTP request pipeline.
 
         app.UseHttpsRedirection();
 
